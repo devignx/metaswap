@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+
+/*Scrollbar customized*/
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  overflow: overlay;
+  width: 5px;
+  z-index: 100;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  z-index: 100;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 15px;
+  background-color: #f4f4f4;
+  border-radius: 100px;
+  overflow: overlay;
+  z-index: 150;
+}
+
+/**/
+.pc{
+  visibility: visible;
+  display: flex;
+}
+
+.mob{
+  visibility: hidden;
+  display: none;
+}
+
+.toppp{
+  z-index: 9999;
+}
+
+.hide{
+  display: none;
+  visibility: hidden;
+}
+
+
+@media screen and (max-width: 640px) {
+
+  .mob{
+    visibility: visible;
+    display:flex;
+  }
+  .pc{
+    visibility: hidden;
+    display: none;
+  }
+}
+
+
+body{
+  background-color: #000000;
+  font-family: Syne;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-y: hidden;
+}
