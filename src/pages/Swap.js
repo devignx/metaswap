@@ -57,7 +57,7 @@ const Swap = () =>{
                             <input className='bg-white/10 text-white w-full max-w-[8rem] md:max-w-full md:w-auto rounded-full pl-7 py-4 outline-none' placeholder='Value' type="number"></input>
                         </div>
                         <div className='flex gap-5 md:gap-2 justify-center items-center  justify-between  py-3 md:py-5'>
-                            <button className='grad font-bold  text-white min-w-[8rem] rounded-full text-sm md:text-xl  w-auto md:w-[10rem] shrink-0 px-6 p-4'>$ DOGE</button>
+                            <button className='grad font-bold  text-white min-w-[8rem] rounded-full text-sm md:text-xl  w-auto md:w-[10rem] shrink-0 px-6 p-4'>$ MET</button>
                             <p className='opacity-0 md:opacity-100   text-white'>:</p>
                             <input className='bg-white/10 text-white w-full max-w-[8rem] md:max-w-full md:w-auto rounded-full pl-7 py-4 outline-none' placeholder='Value' type="number"></input>
                         </div>
