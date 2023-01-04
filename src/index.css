@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
 
 /*Scrollbar customized*/
@@ -17,6 +17,7 @@
 
 ::-webkit-scrollbar {
   width: 6px;
+  height: 3px;
   z-index: 100;
 }
 
@@ -61,12 +62,30 @@
   }
 }
 
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: #000000;
   font-family: Syne;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  overflow-y: hidden;
+  transition: all;
+  transition-duration: 3000ms;
+  transition-property: ease-in-out;
+}
+
+.grad{
+  background: linear-gradient(90deg, #696eff, #f8acff);
+}
+
+.gradtxt{
+  background: linear-gradient(90deg, #696eff, #f8acff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shad{
+  box-shadow: 0px 39px 113px rgba(0, 178, 255, 0.3);
 }
