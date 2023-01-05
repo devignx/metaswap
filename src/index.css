@@ -70,22 +70,25 @@ body{
   font-family: Syne;
   margin: 0;
   padding: 0;
-  transition: all;
-  transition-duration: 3000ms;
-  transition-property: ease-in-out;
 }
 
 .grad{
-  background: linear-gradient(90deg, #696eff, #f8acff);
+  background: linear-gradient(90deg, #696eff, #f8acff ) var(--x, 0)/ 120%;;
+  opacity: 1;
+  transition-duration: 0.3s;
+  
 }
+
+.grad:hover { --x: 100%; }
+
 
 .gradtxt{
   background: linear-gradient(90deg, #696eff, #f8acff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background-clip: text;
 }
 
 .shad{
-  box-shadow: 0px 39px 113px rgba(0, 178, 255, 0.3);
+  box-shadow: 0px 39px 113px rgba(0, 179, 255, 0.184);
 }

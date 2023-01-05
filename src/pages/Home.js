@@ -11,7 +11,7 @@ const Home = () =>{
 
             <div className='fixed w-full h-full flex flex-col gap-5 justify-center items-center'> 
                 <h1 className='font-bold text-white text-center gradtxt text-2xl md:text-3xl'>META SWAP</h1>
-                <p className='text-center text-slate-400'>One stop solution for Swapping your <br></br> <span className='text-white'>Crypto Currencies</span></p>
+                <p className='text-center text-slate-400'>One stop solution for Swapping your <br></br> <span className='text-white'>Crypto Tokens</span></p>
                 <Link to= '/swap'><img className='mt-3 w-[5rem]' src={start} alt="" /></Link>
             </div>
         </div>
