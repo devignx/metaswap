@@ -22,10 +22,10 @@ const Swap = () =>{
             <div>
             <div>
                 { popup?
-                    <div className="fixed justify-center items-center text-xs md:text-lg bottom-5 flex gap-4 uppercase right-5 border-[3px] toppp drop-shadow-lg shad border-purple-400 bg-white rounded-xl p-5">
+                    <div className="fixed justify-center items-center text-xs md:text-lg bottom-5 flex flex-row-reverse md:flex-row gap-4 uppercase right-5 border-[3px] toppp drop-shadow-lg shad border-purple-400 bg-white rounded-xl p-5">
                         <button onClick={closePopup} className="p-3 py-2 md:py-1 rounded-full bg-red-400 text-white">x</button>
-                        <p>Going Live Sooner that you expect</p>
-                        <img className='w-[1.2rem]' src={swit} />
+                        <p>Going Live Sooner than you anticipate 😉</p>
+                        <img className='w-[1.2rem]' src={swit} alt="" />
                     </div>
                 :""}
             </div>
@@ -100,9 +100,9 @@ const Swap = () =>{
                 <img className="relative mix-blend-screen h-screen w-screen top-0" src={img1} alt="" />
             </div>
             
-            <h1 className='text-2xl md:text-4xl w-10/12 m-auto  uppercase my-12 text-center text-white font-semibold'>Start <a className='gradtxt' href='#swap'>Swapping</a> NOW</h1>
+            <h1 id='swap' className='text-2xl md:text-4xl w-10/12 m-auto  uppercase my-12 text-center text-white font-semibold'>Start <span className='gradtxt' href='#'>Swapping</span> NOW</h1>
 
-            <section id='swap' className='m-auto flex-col shad py-8 shrink-0 md:p-7 w-full md:w-fit flex text-sm md:text-xl h-auto rounded-none md:rounded-3xl bg-black/40 backdrop-blur-xl  '>
+            <section className='m-auto flex-col shad py-8 shrink-0 md:p-7 w-full md:w-fit flex text-sm md:text-xl h-auto rounded-none md:rounded-3xl bg-black/40 backdrop-blur-xl  '>
                 <div className='flex px-8 justify-center items-center'>
                     <div>
                         <div className='flex gap-5 md: gap-2 justify-center items-center  justify-between py-3 md:py-5'>
