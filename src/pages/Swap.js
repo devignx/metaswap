@@ -126,9 +126,6 @@ const Swap = () =>{
             <br/><br/><br/>
             
             <footer className="bottom-0 bg-black/40 backdrop-blur-xl h-auto p-8 ">
-                <p className="text-white text-center ">Contact Us</p>
-                <p className="text-white text-center ">Services</p>
-                <p className="text-white text-center ">About US</p>
                 <p className='text-xs text-white text-center m-auto mb-4 mt-12 w-full'>© 2023 Metaswap</p>
             </footer>
         </div>
