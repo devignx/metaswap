@@ -79,7 +79,10 @@ body{
   
 }
 
-.grad:hover { --x: 100%; }
+.grad:hover { 
+  --x: 100%; 
+  filter: hue-rotate(-300deg);
+}
 
 
 .gradtxt{
@@ -87,6 +90,11 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.gradtxt:hover{
+  filter: hue-rotate(-300deg);
+  transition-duration: 0.3s;
 }
 
 .shad{

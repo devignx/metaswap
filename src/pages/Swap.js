@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"
-import Pop from "../components/Pop"
 import { useState } from 'react';
 
 import bgpc from '../assets/land-bg.webp'
@@ -23,9 +22,10 @@ const Swap = () =>{
             <div>
             <div>
                 { popup?
-                    <div className="fixed text-sm md:text-xl bottom-5 flex gap-3 right-5 border-[3px] toppp drop-shadow-lg shad border-purple-400 bg-white rounded-xl p-5">
-                        <img className='w-[1.2rem]' src={swit} />
+                    <div className="fixed justify-center items-center text-xs md:text-lg bottom-5 flex gap-4 uppercase right-5 border-[3px] toppp drop-shadow-lg shad border-purple-400 bg-white rounded-xl p-5">
+                        <button onClick={closePopup} className="p-3 py-2 md:py-1 rounded-full bg-red-400 text-white">x</button>
                         <p>Going Live Sooner that you expect</p>
+                        <img className='w-[1.2rem]' src={swit} />
                     </div>
                 :""}
             </div>
@@ -37,7 +37,7 @@ const Swap = () =>{
                 <Link to = '/'><h1 className='font-bold text-white w-full md:text-xl'>META  <span className='gradtxt'>SWAP</span></h1></Link>
                 <div className='flex flex-row-reverse'>
                     <button onClick={handleClickOpen}  className='w-fit py-2 rounded-lg px-4 pc uppercase text-sm text-white font-medium grad shrink-0'>Connect Wallet</button>
-                    <button><img className='mob' src={nav} alt="" /></button>
+                    <button  onClick={handleClickOpen} ><img className='mob' src={nav} alt="" /></button>
                 </div>
             </div>
 
@@ -119,7 +119,7 @@ const Swap = () =>{
                     <Link><img className='mx-4 pc w-[1.2rem]' src={swit} alt="" /></Link>
                 </div>
 
-                <button className='w-full relative md:w-auto py-4 my-6 uppercase font-medium mt-10 rounded-lg px-4 bg-white '>Connect Wallet</button>
+                <button  onClick={handleClickOpen}  className='w-10/12 m-auto relative md:w-full py-4 my-6 uppercase font-medium mt-10 rounded-lg px-4 bg-white '>Connect Wallet</button>
             </section>
 
             <p  className='text-lg text-white text-center m-auto mt-12 w-10/12 md:w-3/5'>Join the millions of users already taking advantage of the power and convenience of our platform. Start swapping your crypto tokens today and be a part of the future of digital currency exchange!</p>
